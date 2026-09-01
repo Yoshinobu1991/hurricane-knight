@@ -254,7 +254,7 @@
                                     
                                     <td class="p-2 border-r border-gray-200 font-bold text-lg font-cool relative group" :class="getBalanceClass(player)">
                                         ${{ player.balance }}
-                                        <span v-if="player.topUp" class="absolute top-1 right-1 text-[10px] text-hkblue-900 bg-hkgold rounded-full w-4 h-4 flex items-center justify-center cursor-help shadow-sm" :title="'加值紀錄:\n' + player.topUp">
+                                        <span v-if="player.topUp" class="absolute top-0.5 right-0.5 text-[8px] text-hkblue-900 bg-hkgold rounded-sm w-3.5 h-3.5 flex items-center justify-center shadow-sm" :title="'加值紀錄:\n' + player.topUp" style="cursor: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2224%22 height=%2224%22 viewBox=%220 0 24 24%22><text y=%2220%22 font-size=%2220%22>💲</text></svg>'), pointer;">
                                             <i class="fa-solid fa-plus"></i>
                                         </span>
                                     </td>

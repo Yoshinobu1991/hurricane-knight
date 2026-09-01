@@ -162,11 +162,6 @@ for index, row in df_players.iterrows():
     team_fee = int(row['隊費']) if pd.notna(row['隊費']) else 0
     stored_val = int(row['比賽儲值金']) if pd.notna(row['比賽儲值金']) else 0
     
-    # 套用手動加值
-    if clean_name in manual_topups:
-        for t in manual_topups[clean_name]:
-            stored_val += t["amount"]
-            
     status = str(row['狀態']).strip() if pd.notna(row['狀態']) else ""
     
     team_fee_records.append({

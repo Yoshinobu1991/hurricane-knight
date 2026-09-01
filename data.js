@@ -884,7 +884,7 @@ const teamData = {
         {
             "name": "蔡允信",
             "teamFee": 1000,
-            "storedValue": 2100,
+            "storedValue": 2000,
             "status": "已繳納"
         },
         {
