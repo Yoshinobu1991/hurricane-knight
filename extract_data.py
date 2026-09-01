@@ -131,7 +131,19 @@ for index, row in df_players.iterrows():
         "status": status
     })
 
-data_js_content = f"// 自動生成的資料庫 (基於 Excel 解析)\nconst teamData = {json.dumps({'teamFund': team_fund, 'players': players, 'games': games, 'teamFeeRecords': team_fee_records}, ensure_ascii=False, indent=4)};\n"
+# 5. 處理第三分頁 (隊費明細)
+team_expenses = []
+for index, row in df_team.iterrows():
+    item = row['日期 / 項目']
+    amount = row['收入/支出金額']
+    if pd.isna(item): continue
+    
+    team_expenses.append({
+        "item": str(item).strip(),
+        "amount": int(amount) if pd.notna(amount) else 0
+    })
+
+data_js_content = f"// 自動生成的資料庫 (基於 Excel 解析)\nconst teamData = {json.dumps({'teamFund': team_fund, 'players': players, 'games': games, 'teamFeeRecords': team_fee_records, 'teamExpenses': team_expenses}, ensure_ascii=False, indent=4)};\n"
 
 with open(r"c:\Users\Admir\Desktop\Project\Hurricane Knight\data.js", 'w', encoding='utf-8') as f:
     f.write(data_js_content)
