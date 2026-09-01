@@ -61,7 +61,7 @@ for index, row in df_games.iterrows():
             final_balance += t["amount"]
             if topup_str:
                 topup_str += "\n"
-            topup_str += f"{t['date']}        ${t['amount']}"
+            topup_str += f"{t['date']}          ${t['amount']}"
     
     players.append({
         "id": index + 1,
