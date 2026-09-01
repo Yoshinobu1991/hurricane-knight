@@ -133,14 +133,28 @@ for index, row in df_players.iterrows():
 
 # 5. 處理第三分頁 (隊費明細)
 team_expenses = []
+
+# 動態計算：一般身分隊友繳納 1000 隊費
+adult_players_count = sum(1 for p in players if not p['isStudent'])
+team_fee_income = adult_players_count * 1000
+team_expenses.append({
+    "item": "20260215 2026球隊隊費",
+    "amount": team_fee_income
+})
+
 for index, row in df_team.iterrows():
     item = row['日期 / 項目']
     amount = row['收入/支出金額']
     if pd.isna(item): continue
     
+    val = int(amount) if pd.notna(amount) else 0
+    # Excel 中的支出是正數，轉為負數
+    if val > 0:
+        val = -val
+    
     team_expenses.append({
         "item": str(item).strip(),
-        "amount": int(amount) if pd.notna(amount) else 0
+        "amount": val
     })
 
 data_js_content = f"// 自動生成的資料庫 (基於 Excel 解析)\nconst teamData = {json.dumps({'teamFund': team_fund, 'players': players, 'games': games, 'teamFeeRecords': team_fee_records, 'teamExpenses': team_expenses}, ensure_ascii=False, indent=4)};\n"

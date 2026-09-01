@@ -1055,20 +1055,24 @@ const teamData = {
     ],
     "teamExpenses": [
         {
+            "item": "20260215 2026球隊隊費",
+            "amount": 32000
+        },
+        {
             "item": "20260222 八里一日賽",
-            "amount": 400
+            "amount": -400
         },
         {
             "item": "20260301 聯盟M BALL費用",
-            "amount": 310
+            "amount": -310
         },
         {
             "item": "20260307 週六聯盟M BALL費用",
-            "amount": 710
+            "amount": -710
         },
         {
             "item": "20260608 聯盟M BALL費用",
-            "amount": 516
+            "amount": -516
         }
     ]
 };
