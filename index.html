@@ -132,7 +132,7 @@
                     
                     <div class="bg-white p-6 rounded-2xl shadow-lg border-t-8 border-red-600 relative overflow-hidden">
                         <i class="fa-solid fa-triangle-exclamation absolute -right-4 -bottom-4 text-8xl text-gray-100 transform rotate-12"></i>
-                        <h2 class="text-gray-500 text-sm font-bold mb-2 uppercase tracking-widest relative z-10">儲值金不足提醒 (低於 $300)</h2>
+                        <h2 class="text-gray-500 text-sm font-bold mb-2 uppercase tracking-widest relative z-10">儲值金不足提醒 (低於 $500)</h2>
                         <div class="overflow-y-auto max-h-32 mt-3 relative z-10 pr-2">
                             <ul class="text-red-600 font-bold text-sm space-y-2">
                                 <li v-for="player in lowBalancePlayers" :key="player.id" class="flex items-center bg-red-50 p-2 rounded">
@@ -227,7 +227,7 @@
                                     </td>
                                     
                                     <td class="p-2 border-r border-gray-200 font-bold text-lg font-cool" 
-                                        :class="{'text-red-600 bg-red-50': player.balance < 300, 'text-hkblue-600': player.balance >= 300}">
+                                        :class="{'text-red-600 bg-red-50': player.balance < 500, 'text-orange-500 bg-orange-50': player.balance >= 500 && player.balance < 1000, 'text-hkblue-600': player.balance >= 1000}">
                                         ${{ player.balance }}
                                     </td>
                                     
@@ -368,7 +368,7 @@
             },
             computed: {
                 lowBalancePlayers() { 
-                    return this.players.filter(p => p.balance < 300).sort((a,b) => a.balance - b.balance); 
+                    return this.players.filter(p => p.balance < 500).sort((a,b) => a.balance - b.balance); 
                 },
                 teamExpensesTotal() {
                     return this.teamExpenses.reduce((sum, exp) => sum + exp.amount, 0);
