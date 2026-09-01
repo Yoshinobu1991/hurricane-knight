@@ -108,14 +108,32 @@
                     </button>
                 </div>
                 
-                <!-- 手機版選單 -->
-                <div class="md:hidden w-full">
-                    <select v-model="currentTab" class="w-full bg-hkblue-800 text-white border border-hkgold rounded p-3 font-bold">
-                        <option value="dashboard">⚾ 公積金與賽事概況</option>
-                        <option value="matrix">⚾ 完整逐場扣款明細表</option>
-                        <option value="teamExpenses">⚾ 隊費開銷明細</option>
-                        <option value="teamFee">⚾ 隊費與儲值金明細</option>
-                    </select>
+                <!-- 手機版選單 (App風格按鈕) -->
+                <div class="md:hidden w-full grid grid-cols-2 gap-2 mt-4">
+                    <button @click="currentTab = 'dashboard'" 
+                            :class="{'bg-hkgold text-hkblue-900 shadow-md': currentTab === 'dashboard', 'bg-hkblue-800 text-gray-300 border border-hkblue-700': currentTab !== 'dashboard'}"
+                            class="py-3 px-2 rounded-lg text-sm font-bold transition duration-300 flex flex-col items-center justify-center text-center">
+                        <i class="fa-solid fa-chart-pie mb-1 text-xl"></i>
+                        <span>公積金概況</span>
+                    </button>
+                    <button @click="currentTab = 'matrix'" 
+                            :class="{'bg-hkgold text-hkblue-900 shadow-md': currentTab === 'matrix', 'bg-hkblue-800 text-gray-300 border border-hkblue-700': currentTab !== 'matrix'}"
+                            class="py-3 px-2 rounded-lg text-sm font-bold transition duration-300 flex flex-col items-center justify-center text-center">
+                        <i class="fa-solid fa-table-list mb-1 text-xl"></i>
+                        <span>逐場扣款</span>
+                    </button>
+                    <button @click="currentTab = 'teamExpenses'" 
+                            :class="{'bg-hkgold text-hkblue-900 shadow-md': currentTab === 'teamExpenses', 'bg-hkblue-800 text-gray-300 border border-hkblue-700': currentTab !== 'teamExpenses'}"
+                            class="py-3 px-2 rounded-lg text-sm font-bold transition duration-300 flex flex-col items-center justify-center text-center">
+                        <i class="fa-solid fa-money-bill-transfer mb-1 text-xl"></i>
+                        <span>隊費開銷</span>
+                    </button>
+                    <button @click="currentTab = 'teamFee'" 
+                            :class="{'bg-hkgold text-hkblue-900 shadow-md': currentTab === 'teamFee', 'bg-hkblue-800 text-gray-300 border border-hkblue-700': currentTab !== 'teamFee'}"
+                            class="py-3 px-2 rounded-lg text-sm font-bold transition duration-300 flex flex-col items-center justify-center text-center">
+                        <i class="fa-solid fa-file-invoice-dollar mb-1 text-xl"></i>
+                        <span>儲值金明細</span>
+                    </button>
                 </div>
             </div>
         </nav>
