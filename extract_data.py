@@ -60,8 +60,8 @@ for index, row in df_games.iterrows():
         for t in manual_topups[clean_name]:
             final_balance += t["amount"]
             if topup_str:
-                topup_str += "\n"
-            topup_str += f"{t['date']}          ${t['amount']}"
+                topup_str += "<br>"
+            topup_str += f"{t['date']}               <span class='text-green-600'>${t['amount']}</span>"
     
     players.append({
         "id": index + 1,
