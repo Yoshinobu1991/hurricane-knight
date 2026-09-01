@@ -828,5 +828,229 @@ const teamData = {
                 }
             ]
         }
+    ],
+    "teamFeeRecords": [
+        {
+            "name": "蔡允信",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "陳麟昇",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "徐嘉宏",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "莊子毅",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "劉信宏",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "藍凱翔",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "顏嘉宏",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "林雍傑",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "黃浩勝",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "蕭喬駿",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "佘文甫",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "劉毓銘",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "周澤緯",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "李富生",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "莊晨鴻",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "鄭安鈞",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "吳英信",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "黃彥智",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "陳乙嘉",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "林奕傑",
+            "teamFee": 0,
+            "storedValue": 1500,
+            "status": "已繳納"
+        },
+        {
+            "name": "陳德光",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "楊承翰",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "林書楷",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "林傳偉",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "陳國嵐",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "林政豪",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "陳禹至",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "張軒齊",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "陳渝恩",
+            "teamFee": 0,
+            "storedValue": 1500,
+            "status": "已繳納"
+        },
+        {
+            "name": "古佳叡",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "古佳翰",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "梁信勝",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "羅俊昇",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        },
+        {
+            "name": "胡哲瑋",
+            "teamFee": 0,
+            "storedValue": 1500,
+            "status": "已繳納"
+        },
+        {
+            "name": "陳昱昕",
+            "teamFee": 0,
+            "storedValue": 1500,
+            "status": "已繳納"
+        },
+        {
+            "name": "廖述博",
+            "teamFee": 0,
+            "storedValue": 1500,
+            "status": "已繳納"
+        },
+        {
+            "name": "黃梅奇",
+            "teamFee": 1000,
+            "storedValue": 2000,
+            "status": "已繳納"
+        }
     ]
 };

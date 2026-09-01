@@ -94,6 +94,11 @@
                             class="px-6 py-2 rounded-full font-bold transition duration-300 flex items-center">
                         <i class="fa-solid fa-table-list mr-2"></i> 完整逐場扣款明細表
                     </button>
+                    <button @click="currentTab = 'teamFee'" 
+                            :class="{'bg-hkgold text-hkblue-900 shadow-inner': currentTab === 'teamFee', 'hover:bg-hkblue-800 text-gray-300': currentTab !== 'teamFee'}"
+                            class="px-6 py-2 rounded-full font-bold transition duration-300 flex items-center">
+                        <i class="fa-solid fa-file-invoice-dollar mr-2"></i> 隊費與儲值金明細
+                    </button>
                 </div>
                 
                 <!-- 手機版選單 -->
@@ -101,6 +106,7 @@
                     <select v-model="currentTab" class="w-full bg-hkblue-800 text-white border border-hkgold rounded p-3 font-bold">
                         <option value="dashboard">⚾ 公積金與概況</option>
                         <option value="matrix">⚾ 完整逐場扣款明細表</option>
+                        <option value="teamFee">⚾ 隊費與儲值金明細</option>
                     </select>
                 </div>
             </div>
@@ -232,6 +238,63 @@
                 </div>
             </div>
 
+            <!-- 隊費與儲值金明細 Tab -->
+            <div v-show="currentTab === 'teamFee'" class="space-y-4 max-w-5xl mx-auto">
+                <div class="bg-white p-2 md:p-6 rounded-2xl shadow-lg border-t-8 border-hkblue-900">
+                    <div class="flex items-center mb-6 pb-2 border-b-2 border-gray-100">
+                        <i class="fa-solid fa-file-invoice-dollar text-2xl text-hkblue-700 mr-3"></i>
+                        <h2 class="text-2xl font-bold text-hkblue-900">隊費及儲值金收費紀錄</h2>
+                    </div>
+                    
+                    <div class="table-container rounded-xl border-2 border-hkblue-800">
+                        <table class="w-full text-center text-sm border-collapse">
+                            <thead>
+                                <tr>
+                                    <th class="p-3 border-r border-b border-hkblue-700 sticky left-0 bg-hkblue-900 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.5)] z-20">球員姓名</th>
+                                    <th class="p-3 border border-hkblue-700 bg-hkblue-800">基本隊費</th>
+                                    <th class="p-3 border border-hkblue-700 bg-hkblue-800">比賽儲值金</th>
+                                    <th class="p-3 border border-hkblue-700 bg-hkblue-800">總計</th>
+                                    <th class="p-3 border border-hkblue-700 bg-hkblue-800 text-hkgold">繳費狀態</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="(record, index) in teamFeeRecords" :key="record.name" 
+                                    class="border-b border-gray-200 transition-colors"
+                                    :class="index % 2 === 0 ? 'bg-white hover:bg-blue-50' : 'bg-gray-50 hover:bg-blue-50'">
+                                    
+                                    <td class="p-3 border-r border-gray-200 font-bold sticky left-0 shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)] z-10 text-left pl-4"
+                                        :class="index % 2 === 0 ? 'bg-white' : 'bg-gray-50'">
+                                        <span class="text-gray-800 text-base">{{ record.name }}</span>
+                                    </td>
+                                    
+                                    <td class="p-3 border-r border-gray-200 text-gray-700 font-cool text-base">
+                                        ${{ record.teamFee }}
+                                    </td>
+                                    
+                                    <td class="p-3 border-r border-gray-200 text-gray-700 font-cool text-base">
+                                        ${{ record.storedValue }}
+                                    </td>
+                                    
+                                    <td class="p-3 border-r border-gray-200 font-bold text-lg font-cool text-hkblue-800">
+                                        ${{ record.teamFee + record.storedValue }}
+                                    </td>
+                                    
+                                    <td class="p-3 border-r border-gray-200 font-bold">
+                                        <span v-if="record.status.includes('OK')" class="text-green-600 bg-green-50 px-3 py-1 rounded-full border border-green-200">
+                                            <i class="fa-solid fa-check mr-1"></i> {{ record.status }}
+                                        </span>
+                                        <span v-else-if="record.status" class="text-red-500 bg-red-50 px-3 py-1 rounded border border-red-200">
+                                            {{ record.status }}
+                                        </span>
+                                        <span v-else class="text-gray-400">-</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
         </main>
         
         <footer class="bg-hkblue-900 text-center py-6 mt-12 border-t-4 border-hkgold">
@@ -251,7 +314,8 @@
                     currentTab: 'matrix', 
                     teamFund: teamData.teamFund,
                     players: teamData.players,
-                    games: teamData.games
+                    games: teamData.games,
+                    teamFeeRecords: teamData.teamFeeRecords
                 }
             },
             computed: {

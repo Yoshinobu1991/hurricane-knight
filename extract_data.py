@@ -21,6 +21,7 @@ if os.path.exists(roster_path):
                     number_map[name] = num
 
 xls = pd.ExcelFile(file_path)
+df_players = pd.read_excel(xls, '隊費及儲值金收費紀錄')
 df_games = pd.read_excel(xls, '比賽逐場費用明細')
 df_team = pd.read_excel(xls, '隊費明細')
 
@@ -112,7 +113,25 @@ players.sort(key=sort_player)
 total_expense = df_team['收入/支出金額'].sum() if '收入/支出金額' in df_team.columns else 0
 team_fund = 15000 + int(total_expense)
 
-data_js_content = f"// 自動生成的資料庫 (基於 Excel 解析)\nconst teamData = {json.dumps({'teamFund': team_fund, 'players': players, 'games': games}, ensure_ascii=False, indent=4)};\n"
+# 4. 處理第一分頁 (隊費及儲值金收費紀錄)
+team_fee_records = []
+for index, row in df_players.iterrows():
+    name = row['球員姓名']
+    if pd.isna(name): continue
+    
+    clean_name = str(name).strip()
+    team_fee = int(row['隊費']) if pd.notna(row['隊費']) else 0
+    stored_val = int(row['比賽儲值金']) if pd.notna(row['比賽儲值金']) else 0
+    status = str(row['狀態']).strip() if pd.notna(row['狀態']) else ""
+    
+    team_fee_records.append({
+        "name": clean_name,
+        "teamFee": team_fee,
+        "storedValue": stored_val,
+        "status": status
+    })
+
+data_js_content = f"// 自動生成的資料庫 (基於 Excel 解析)\nconst teamData = {json.dumps({'teamFund': team_fund, 'players': players, 'games': games, 'teamFeeRecords': team_fee_records}, ensure_ascii=False, indent=4)};\n"
 
 with open(r"c:\Users\Admir\Desktop\Project\Hurricane Knight\data.js", 'w', encoding='utf-8') as f:
     f.write(data_js_content)
