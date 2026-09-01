@@ -8,7 +8,8 @@ const teamData = {
             "number": "6",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1267
+            "balance": 1267,
+            "topUp": ""
         },
         {
             "id": 28,
@@ -16,7 +17,8 @@ const teamData = {
             "number": "8",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1094
+            "balance": 1094,
+            "topUp": ""
         },
         {
             "id": 9,
@@ -24,7 +26,8 @@ const teamData = {
             "number": "9",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 910
+            "balance": 910,
+            "topUp": ""
         },
         {
             "id": 22,
@@ -32,7 +35,8 @@ const teamData = {
             "number": "10",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2000
+            "balance": 2000,
+            "topUp": ""
         },
         {
             "id": 15,
@@ -40,7 +44,8 @@ const teamData = {
             "number": "12",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 285
+            "balance": 285,
+            "topUp": ""
         },
         {
             "id": 24,
@@ -48,7 +53,8 @@ const teamData = {
             "number": "12",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1317
+            "balance": 1317,
+            "topUp": ""
         },
         {
             "id": 2,
@@ -56,7 +62,8 @@ const teamData = {
             "number": "13",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1059
+            "balance": 1059,
+            "topUp": ""
         },
         {
             "id": 32,
@@ -64,7 +71,8 @@ const teamData = {
             "number": "15",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2000
+            "balance": 2000,
+            "topUp": ""
         },
         {
             "id": 14,
@@ -72,7 +80,8 @@ const teamData = {
             "number": "16",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1861
+            "balance": 1861,
+            "topUp": ""
         },
         {
             "id": 30,
@@ -80,7 +89,8 @@ const teamData = {
             "number": "16",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1763
+            "balance": 1763,
+            "topUp": ""
         },
         {
             "id": 5,
@@ -88,7 +98,8 @@ const teamData = {
             "number": "17",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 206
+            "balance": 206,
+            "topUp": ""
         },
         {
             "id": 1,
@@ -96,7 +107,8 @@ const teamData = {
             "number": "18",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1609
+            "balance": 1609,
+            "topUp": ""
         },
         {
             "id": 7,
@@ -104,7 +116,8 @@ const teamData = {
             "number": "19",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 453
+            "balance": 453,
+            "topUp": ""
         },
         {
             "id": 18,
@@ -112,7 +125,8 @@ const teamData = {
             "number": "24",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1368
+            "balance": 1368,
+            "topUp": ""
         },
         {
             "id": 16,
@@ -120,7 +134,8 @@ const teamData = {
             "number": "27",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1706
+            "balance": 1706,
+            "topUp": ""
         },
         {
             "id": 10,
@@ -128,7 +143,8 @@ const teamData = {
             "number": "28",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2000
+            "balance": 2000,
+            "topUp": ""
         },
         {
             "id": 13,
@@ -136,7 +152,8 @@ const teamData = {
             "number": "33",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1886
+            "balance": 1886,
+            "topUp": ""
         },
         {
             "id": 20,
@@ -144,7 +161,8 @@ const teamData = {
             "number": "33",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1020
+            "balance": 1020,
+            "topUp": ""
         },
         {
             "id": 25,
@@ -152,7 +170,8 @@ const teamData = {
             "number": "40",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 931
+            "balance": 931,
+            "topUp": ""
         },
         {
             "id": 31,
@@ -160,7 +179,8 @@ const teamData = {
             "number": "43",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 541
+            "balance": 541,
+            "topUp": ""
         },
         {
             "id": 11,
@@ -168,7 +188,8 @@ const teamData = {
             "number": "47",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2000
+            "balance": 2000,
+            "topUp": ""
         },
         {
             "id": 4,
@@ -176,7 +197,8 @@ const teamData = {
             "number": "56",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2000
+            "balance": 2000,
+            "topUp": ""
         },
         {
             "id": 26,
@@ -184,7 +206,8 @@ const teamData = {
             "number": "66",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1754
+            "balance": 1754,
+            "topUp": ""
         },
         {
             "id": 6,
@@ -192,7 +215,8 @@ const teamData = {
             "number": "68",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 793
+            "balance": 793,
+            "topUp": ""
         },
         {
             "id": 3,
@@ -200,7 +224,8 @@ const teamData = {
             "number": "71",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1126
+            "balance": 1126,
+            "topUp": ""
         },
         {
             "id": 21,
@@ -208,7 +233,8 @@ const teamData = {
             "number": "73",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 728
+            "balance": 728,
+            "topUp": ""
         },
         {
             "id": 12,
@@ -216,7 +242,8 @@ const teamData = {
             "number": "77",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 717
+            "balance": 717,
+            "topUp": ""
         },
         {
             "id": 23,
@@ -224,7 +251,8 @@ const teamData = {
             "number": "78",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1872
+            "balance": 1872,
+            "topUp": ""
         },
         {
             "id": 17,
@@ -232,7 +260,8 @@ const teamData = {
             "number": "83",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1467
+            "balance": 1467,
+            "topUp": ""
         },
         {
             "id": 8,
@@ -240,7 +269,8 @@ const teamData = {
             "number": "86",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2000
+            "balance": 2000,
+            "topUp": ""
         },
         {
             "id": 27,
@@ -248,7 +278,8 @@ const teamData = {
             "number": "88",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2000
+            "balance": 2000,
+            "topUp": ""
         },
         {
             "id": 29,
@@ -256,7 +287,8 @@ const teamData = {
             "number": "99",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1877
+            "balance": 1877,
+            "topUp": ""
         },
         {
             "id": 33,
@@ -264,7 +296,8 @@ const teamData = {
             "number": "28",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 900
+            "balance": 900,
+            "topUp": ""
         },
         {
             "id": 37,
@@ -272,7 +305,8 @@ const teamData = {
             "number": "52",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 900
+            "balance": 900,
+            "topUp": ""
         },
         {
             "id": 34,
@@ -280,7 +314,8 @@ const teamData = {
             "number": "66",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 600
+            "balance": 600,
+            "topUp": ""
         },
         {
             "id": 35,
@@ -288,7 +323,8 @@ const teamData = {
             "number": "96",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 1200
+            "balance": 1200,
+            "topUp": ""
         },
         {
             "id": 36,
@@ -296,7 +332,8 @@ const teamData = {
             "number": "98",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 900
+            "balance": 900,
+            "topUp": ""
         }
     ],
     "games": [

@@ -41,13 +41,20 @@ for index, row in df_games.iterrows():
     # 查找背號
     player_number = number_map.get(clean_name, "")
     
+    # 處理加值紀錄
+    topup_cols = [c for c in df_games.columns if '加值' in str(c)]
+    topup = ""
+    if len(topup_cols) > 0 and pd.notna(row[topup_cols[0]]):
+        topup = str(row[topup_cols[0]]).strip()
+    
     players.append({
         "id": index + 1,
         "name": clean_name,
         "number": player_number,
         "isStudent": is_student,
         "initialBalance": int(initial_balance) if pd.notna(initial_balance) else 0,
-        "balance": int(current_balance) if pd.notna(current_balance) else 0
+        "balance": int(current_balance) if pd.notna(current_balance) else 0,
+        "topUp": topup
     })
 
 # 2. 處理歷史比賽紀錄

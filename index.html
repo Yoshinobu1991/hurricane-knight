@@ -252,9 +252,11 @@
                                         ${{ player.initialBalance }}
                                     </td>
                                     
-                                    <td class="p-2 border-r border-gray-200 font-bold text-lg font-cool" 
-                                        :class="getBalanceClass(player)">
+                                    <td class="p-2 border-r border-gray-200 font-bold text-lg font-cool relative group" :class="getBalanceClass(player)">
                                         ${{ player.balance }}
+                                        <span v-if="player.topUp" class="absolute top-1 right-1 text-[10px] text-hkblue-900 bg-hkgold rounded-full w-4 h-4 flex items-center justify-center cursor-help shadow-sm" :title="'加值紀錄:\n' + player.topUp">
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
                                     </td>
                                     
                                     <td v-for="game in games" :key="game.date" class="p-2 border-r border-gray-200">
