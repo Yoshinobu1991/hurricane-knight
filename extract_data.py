@@ -25,6 +25,11 @@ df_players = pd.read_excel(xls, '隊費及儲值金收費紀錄')
 df_games = pd.read_excel(xls, '比賽逐場費用明細')
 df_team = pd.read_excel(xls, '隊費基本開銷')
 
+# 手動加值紀錄
+manual_topups = {
+    "蔡允信": [{"date": "2026/09/01", "amount": 100}]
+}
+
 # 1. 處理球員基本資料
 players = []
 for index, row in df_games.iterrows():
@@ -41,11 +46,22 @@ for index, row in df_games.iterrows():
     # 查找背號
     player_number = number_map.get(clean_name, "")
     
-    # 處理加值紀錄
+    # 處理 Excel 中的加值紀錄
     topup_cols = [c for c in df_games.columns if '加值' in str(c)]
-    topup = ""
+    topup_str = ""
     if len(topup_cols) > 0 and pd.notna(row[topup_cols[0]]):
-        topup = str(row[topup_cols[0]]).strip()
+        topup_str = str(row[topup_cols[0]]).strip()
+
+    # 計算最終餘額
+    final_balance = int(current_balance) if pd.notna(current_balance) else 0
+    
+    # 套用手動加值
+    if clean_name in manual_topups:
+        for t in manual_topups[clean_name]:
+            final_balance += t["amount"]
+            if topup_str:
+                topup_str += "\n"
+            topup_str += f"{t['date']} ${t['amount']}"
     
     players.append({
         "id": index + 1,
@@ -53,8 +69,8 @@ for index, row in df_games.iterrows():
         "number": player_number,
         "isStudent": is_student,
         "initialBalance": int(initial_balance) if pd.notna(initial_balance) else 0,
-        "balance": int(current_balance) if pd.notna(current_balance) else 0,
-        "topUp": topup
+        "balance": final_balance,
+        "topUp": topup_str
     })
 
 # 2. 處理歷史比賽紀錄
@@ -145,6 +161,12 @@ for index, row in df_players.iterrows():
     clean_name = str(name).strip()
     team_fee = int(row['隊費']) if pd.notna(row['隊費']) else 0
     stored_val = int(row['比賽儲值金']) if pd.notna(row['比賽儲值金']) else 0
+    
+    # 套用手動加值
+    if clean_name in manual_topups:
+        for t in manual_topups[clean_name]:
+            stored_val += t["amount"]
+            
     status = str(row['狀態']).strip() if pd.notna(row['狀態']) else ""
     
     team_fee_records.append({

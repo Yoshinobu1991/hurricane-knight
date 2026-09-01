@@ -107,8 +107,8 @@ const teamData = {
             "number": "18",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1609,
-            "topUp": ""
+            "balance": 1709,
+            "topUp": "2026/09/01 $100"
         },
         {
             "id": 7,
@@ -884,7 +884,7 @@ const teamData = {
         {
             "name": "蔡允信",
             "teamFee": 1000,
-            "storedValue": 2000,
+            "storedValue": 2100,
             "status": "已繳納"
         },
         {
