@@ -432,7 +432,7 @@ const teamData = {
             "date": "4/26",
             "opponent": "VS TNT",
             "totalCost": 2943,
-            "adultFee": 128,
+            "adultFee": 256,
             "participants": [
                 {
                     "name": "陳麟昇",
@@ -496,7 +496,7 @@ const teamData = {
             "date": "5/3",
             "opponent": "VS 卡吐司",
             "totalCost": 2859,
-            "adultFee": 123,
+            "adultFee": 246,
             "participants": [
                 {
                     "name": "徐嘉宏",
@@ -632,7 +632,7 @@ const teamData = {
             "date": "6/7",
             "opponent": "VS 夢想家",
             "totalCost": 2943,
-            "adultFee": 128,
+            "adultFee": 256,
             "participants": [
                 {
                     "name": "劉信宏",

@@ -83,7 +83,8 @@ for col in game_columns:
                 student_count += 1
             else:
                 adult_count += 1
-                adult_fee = int(val)
+                if int(val) > adult_fee:
+                    adult_fee = int(val)
 
     if len(participants) > 0:
         games.append({
