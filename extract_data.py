@@ -174,6 +174,7 @@ for index, row in df_players.iterrows():
             topup_str += f"{t['date']}               <span class='text-green-600'>${t['amount']}</span>"
             
     status = str(row['狀態']).strip() if pd.notna(row['狀態']) else ""
+    is_student = str(row.get('身分', '')).strip() == '學生'
     
     team_fee_records.append({
         "name": clean_name,
@@ -181,8 +182,11 @@ for index, row in df_players.iterrows():
         "teamFee": team_fee,
         "storedValue": stored_val,
         "topUp": topup_str,
-        "status": status
+        "status": status,
+        "isStudent": is_student
     })
+
+team_fee_records.sort(key=sort_player)
 
 # 5. 處理第三分頁 (隊費明細)
 team_expenses = []
