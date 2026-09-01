@@ -94,6 +94,19 @@ for col in game_columns:
             "participants": participants
         })
 
+# 排序球員： 身分(一般優先) -> 背號
+def sort_player(p):
+    # 學生排在後面，所以 isStudent == True 給 1, False 給 0
+    role_score = 1 if p["isStudent"] else 0
+    # 背號轉數字，沒有背號的給 999 墊底
+    try:
+        num = int(p["number"]) if p["number"] else 999
+    except:
+        num = 999
+    return (role_score, num)
+
+players.sort(key=sort_player)
+
 # 3. 處理隊費 (公積金)
 total_expense = df_team['收入/支出金額'].sum() if '收入/支出金額' in df_team.columns else 0
 team_fund = 15000 + int(total_expense)

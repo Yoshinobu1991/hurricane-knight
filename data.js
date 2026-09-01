@@ -3,220 +3,12 @@ const teamData = {
     "teamFund": 16936,
     "players": [
         {
-            "id": 1,
-            "name": "蔡允信",
-            "number": "18",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1609
-        },
-        {
-            "id": 2,
-            "name": "陳麟昇",
-            "number": "13",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1059
-        },
-        {
-            "id": 3,
-            "name": "徐嘉宏",
-            "number": "71",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1126
-        },
-        {
-            "id": 4,
-            "name": "莊子毅",
-            "number": "56",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 2000
-        },
-        {
-            "id": 5,
-            "name": "劉信宏",
-            "number": "17",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 206
-        },
-        {
-            "id": 6,
-            "name": "藍凱翔",
-            "number": "68",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 793
-        },
-        {
-            "id": 7,
-            "name": "顏嘉宏",
-            "number": "19",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 453
-        },
-        {
-            "id": 8,
-            "name": "林雍傑",
-            "number": "86",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 2000
-        },
-        {
-            "id": 9,
-            "name": "黃浩勝",
-            "number": "9",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 910
-        },
-        {
-            "id": 10,
-            "name": "蕭喬駿",
-            "number": "28",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 2000
-        },
-        {
-            "id": 11,
-            "name": "佘文甫",
-            "number": "47",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 2000
-        },
-        {
-            "id": 12,
-            "name": "劉毓銘",
-            "number": "77",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 717
-        },
-        {
-            "id": 13,
-            "name": "周澤緯",
-            "number": "33",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1886
-        },
-        {
-            "id": 14,
-            "name": "李富生",
-            "number": "16",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1861
-        },
-        {
-            "id": 15,
-            "name": "莊晨鴻",
-            "number": "12",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 285
-        },
-        {
-            "id": 16,
-            "name": "鄭安鈞",
-            "number": "27",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1706
-        },
-        {
-            "id": 17,
-            "name": "吳英信",
-            "number": "83",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1467
-        },
-        {
-            "id": 18,
-            "name": "黃彥智",
-            "number": "24",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1368
-        },
-        {
             "id": 19,
             "name": "陳乙嘉",
             "number": "6",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1267
-        },
-        {
-            "id": 20,
-            "name": "陳德光",
-            "number": "33",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1020
-        },
-        {
-            "id": 21,
-            "name": "楊承翰",
-            "number": "73",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 728
-        },
-        {
-            "id": 22,
-            "name": "林書楷",
-            "number": "10",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 2000
-        },
-        {
-            "id": 23,
-            "name": "林傳偉",
-            "number": "78",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1872
-        },
-        {
-            "id": 24,
-            "name": "陳國嵐",
-            "number": "12",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1317
-        },
-        {
-            "id": 25,
-            "name": "林政豪",
-            "number": "40",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 931
-        },
-        {
-            "id": 26,
-            "name": "古佳叡",
-            "number": "66",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 1754
-        },
-        {
-            "id": 27,
-            "name": "古佳翰",
-            "number": "88",
-            "isStudent": false,
-            "initialBalance": 2000,
-            "balance": 2000
         },
         {
             "id": 28,
@@ -227,28 +19,44 @@ const teamData = {
             "balance": 1094
         },
         {
-            "id": 29,
-            "name": "羅俊昇",
-            "number": "99",
+            "id": 9,
+            "name": "黃浩勝",
+            "number": "9",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1877
+            "balance": 910
         },
         {
-            "id": 30,
-            "name": "陳禹至",
-            "number": "16",
+            "id": 22,
+            "name": "林書楷",
+            "number": "10",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1763
+            "balance": 2000
         },
         {
-            "id": 31,
-            "name": "張軒齊",
-            "number": "43",
+            "id": 15,
+            "name": "莊晨鴻",
+            "number": "12",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 541
+            "balance": 285
+        },
+        {
+            "id": 24,
+            "name": "陳國嵐",
+            "number": "12",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1317
+        },
+        {
+            "id": 2,
+            "name": "陳麟昇",
+            "number": "13",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1059
         },
         {
             "id": 32,
@@ -259,9 +67,209 @@ const teamData = {
             "balance": 2000
         },
         {
+            "id": 14,
+            "name": "李富生",
+            "number": "16",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1861
+        },
+        {
+            "id": 30,
+            "name": "陳禹至",
+            "number": "16",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1763
+        },
+        {
+            "id": 5,
+            "name": "劉信宏",
+            "number": "17",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 206
+        },
+        {
+            "id": 1,
+            "name": "蔡允信",
+            "number": "18",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1609
+        },
+        {
+            "id": 7,
+            "name": "顏嘉宏",
+            "number": "19",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 453
+        },
+        {
+            "id": 18,
+            "name": "黃彥智",
+            "number": "24",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1368
+        },
+        {
+            "id": 16,
+            "name": "鄭安鈞",
+            "number": "27",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1706
+        },
+        {
+            "id": 10,
+            "name": "蕭喬駿",
+            "number": "28",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 2000
+        },
+        {
+            "id": 13,
+            "name": "周澤緯",
+            "number": "33",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1886
+        },
+        {
+            "id": 20,
+            "name": "陳德光",
+            "number": "33",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1020
+        },
+        {
+            "id": 25,
+            "name": "林政豪",
+            "number": "40",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 931
+        },
+        {
+            "id": 31,
+            "name": "張軒齊",
+            "number": "43",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 541
+        },
+        {
+            "id": 11,
+            "name": "佘文甫",
+            "number": "47",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 2000
+        },
+        {
+            "id": 4,
+            "name": "莊子毅",
+            "number": "56",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 2000
+        },
+        {
+            "id": 26,
+            "name": "古佳叡",
+            "number": "66",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1754
+        },
+        {
+            "id": 6,
+            "name": "藍凱翔",
+            "number": "68",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 793
+        },
+        {
+            "id": 3,
+            "name": "徐嘉宏",
+            "number": "71",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1126
+        },
+        {
+            "id": 21,
+            "name": "楊承翰",
+            "number": "73",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 728
+        },
+        {
+            "id": 12,
+            "name": "劉毓銘",
+            "number": "77",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 717
+        },
+        {
+            "id": 23,
+            "name": "林傳偉",
+            "number": "78",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1872
+        },
+        {
+            "id": 17,
+            "name": "吳英信",
+            "number": "83",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1467
+        },
+        {
+            "id": 8,
+            "name": "林雍傑",
+            "number": "86",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 2000
+        },
+        {
+            "id": 27,
+            "name": "古佳翰",
+            "number": "88",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 2000
+        },
+        {
+            "id": 29,
+            "name": "羅俊昇",
+            "number": "99",
+            "isStudent": false,
+            "initialBalance": 2000,
+            "balance": 1877
+        },
+        {
             "id": 33,
             "name": "胡哲瑋",
             "number": "28",
+            "isStudent": true,
+            "initialBalance": 1500,
+            "balance": 900
+        },
+        {
+            "id": 37,
+            "name": "陳渝恩",
+            "number": "52",
             "isStudent": true,
             "initialBalance": 1500,
             "balance": 900
@@ -286,14 +294,6 @@ const teamData = {
             "id": 36,
             "name": "廖述博",
             "number": "98",
-            "isStudent": true,
-            "initialBalance": 1500,
-            "balance": 900
-        },
-        {
-            "id": 37,
-            "name": "陳渝恩",
-            "number": "52",
             "isStudent": true,
             "initialBalance": 1500,
             "balance": 900
