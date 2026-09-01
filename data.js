@@ -98,8 +98,8 @@ const teamData = {
             "number": "17",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 206,
-            "topUp": ""
+            "balance": 2206,
+            "topUp": "2026/09/01               <span class='text-green-600'>$2000</span>"
         },
         {
             "id": 1,
