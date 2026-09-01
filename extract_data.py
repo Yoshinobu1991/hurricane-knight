@@ -23,7 +23,7 @@ if os.path.exists(roster_path):
 xls = pd.ExcelFile(file_path)
 df_players = pd.read_excel(xls, '隊費及儲值金收費紀錄')
 df_games = pd.read_excel(xls, '比賽逐場費用明細')
-df_team = pd.read_excel(xls, '隊費明細')
+df_team = pd.read_excel(xls, '隊費基本開銷')
 
 # 1. 處理球員基本資料
 players = []
