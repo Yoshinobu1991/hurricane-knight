@@ -89,7 +89,7 @@
                     <button @click="currentTab = 'dashboard'" 
                             :class="{'bg-hkgold text-hkblue-900 shadow-inner': currentTab === 'dashboard', 'hover:bg-hkblue-800 text-gray-300': currentTab !== 'dashboard'}"
                             class="px-6 py-2 rounded-full font-bold transition duration-300 flex items-center">
-                        <i class="fa-solid fa-chart-pie mr-2"></i> 公積金與賽事概況
+                        <i class="fa-solid fa-chart-pie mr-2"></i> 隊費金額與賽事概況
                     </button>
                     <button @click="currentTab = 'matrix'" 
                             :class="{'bg-hkgold text-hkblue-900 shadow-inner': currentTab === 'matrix', 'hover:bg-hkblue-800 text-gray-300': currentTab !== 'matrix'}"
@@ -114,7 +114,7 @@
                             :class="{'bg-hkgold text-hkblue-900 shadow-md': currentTab === 'dashboard', 'bg-hkblue-800 text-gray-300 border border-hkblue-700': currentTab !== 'dashboard'}"
                             class="py-3 px-2 rounded-lg text-sm font-bold transition duration-300 flex flex-col items-center justify-center text-center">
                         <i class="fa-solid fa-chart-pie mb-1 text-xl"></i>
-                        <span>公積金概況</span>
+                        <span>隊費金額概況</span>
                     </button>
                     <button @click="currentTab = 'matrix'" 
                             :class="{'bg-hkgold text-hkblue-900 shadow-md': currentTab === 'matrix', 'bg-hkblue-800 text-gray-300 border border-hkblue-700': currentTab !== 'matrix'}"
@@ -146,7 +146,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-white p-6 rounded-2xl shadow-lg border-t-8 border-hkblue-700 relative overflow-hidden">
                         <i class="fa-solid fa-sack-dollar absolute -right-4 -bottom-4 text-8xl text-gray-100 transform -rotate-12"></i>
-                        <h2 class="text-gray-500 text-sm font-bold mb-2 uppercase tracking-widest relative z-10">球隊公積金總餘額</h2>
+                        <h2 class="text-gray-500 text-sm font-bold mb-2 uppercase tracking-widest relative z-10">球隊隊費餘額</h2>
                         <p class="text-5xl font-cool text-hkblue-900 relative z-10">$ {{ teamExpensesTotal.toLocaleString() }}</p>
                     </div>
                     
