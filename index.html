@@ -68,8 +68,21 @@
     </style>
 </head>
 <body class="text-gray-800 font-sans">
-    <div id="app" class="min-h-screen flex flex-col">
-        <!-- 導覽列 -->
+    <div id="app" class="min-h-screen relative">
+        <!-- 左側裝飾圖 (螢幕夠寬才顯示) -->
+        <div class="hidden 2xl:flex fixed left-10 top-1/2 transform -translate-y-1/2 flex-col space-y-12 z-0">
+            <img src="./assets/player_1.png" class="w-40 h-auto drop-shadow-2xl hover:scale-110 hover:-translate-y-4 transition-all duration-500 cursor-pointer" alt="Player">
+            <img src="./assets/player_2.png" class="w-40 h-auto drop-shadow-2xl hover:scale-110 hover:-translate-y-4 transition-all duration-500 cursor-pointer" alt="Player">
+            <img src="./assets/player_3.png" class="w-40 h-auto drop-shadow-2xl hover:scale-110 hover:-translate-y-4 transition-all duration-500 cursor-pointer" alt="Player">
+        </div>
+
+        <!-- 右側裝飾圖 (螢幕夠寬才顯示) -->
+        <div class="hidden 2xl:flex fixed right-10 top-1/2 transform -translate-y-1/2 flex-col space-y-12 z-0">
+            <img src="./assets/player_4.png" class="w-40 h-auto drop-shadow-2xl hover:scale-110 hover:-translate-y-4 transition-all duration-500 cursor-pointer" alt="Player">
+            <img src="./assets/player_5.png" class="w-40 h-auto drop-shadow-2xl hover:scale-110 hover:-translate-y-4 transition-all duration-500 cursor-pointer" alt="Player">
+        </div>
+
+        <!-- 頂部導覽列 -->
         <nav class="bg-hkblue-900 text-white shadow-xl border-b-4 border-hkgold">
             <div class="container mx-auto flex flex-col md:flex-row justify-between items-center p-4">
                 
