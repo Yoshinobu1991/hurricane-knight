@@ -248,11 +248,11 @@
                                         <span v-else class="text-gray-500 text-xs">一般</span>
                                     </td>
                                     
-                                    <td class="p-2 border-r border-gray-200 text-gray-600 font-bold">
+                                    <td class="p-2 border-r border-gray-200 text-gray-600 font-extrabold">
                                         ${{ player.initialBalance }}
                                     </td>
                                     
-                                    <td class="p-2 border-r border-gray-200 font-bold relative group transition-colors duration-200" 
+                                    <td class="p-2 border-r border-gray-200 font-extrabold relative group transition-colors duration-200" 
                                          :class="[getBalanceClass(player), player.topUp ? 'cursor-pointer hover:opacity-80' : '']"
                                          @click="player.topUp ? showTopUpDetails(player) : null">
                                         ${{ player.balance }}
