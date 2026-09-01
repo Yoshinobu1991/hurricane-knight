@@ -883,222 +883,259 @@ const teamData = {
     "teamFeeRecords": [
         {
             "name": "蔡允信",
+            "number": "18",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "陳麟昇",
+            "number": "13",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "徐嘉宏",
+            "number": "71",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "莊子毅",
+            "number": "56",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "劉信宏",
+            "number": "17",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "藍凱翔",
+            "number": "68",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "顏嘉宏",
+            "number": "19",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "林雍傑",
+            "number": "86",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "黃浩勝",
+            "number": "9",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "蕭喬駿",
+            "number": "28",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "佘文甫",
+            "number": "47",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "劉毓銘",
+            "number": "77",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "周澤緯",
+            "number": "33",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "李富生",
+            "number": "16",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "莊晨鴻",
+            "number": "12",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "鄭安鈞",
+            "number": "27",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "吳英信",
+            "number": "83",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "黃彥智",
+            "number": "24",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "陳乙嘉",
+            "number": "6",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "林奕傑",
+            "number": "66",
             "teamFee": 0,
             "storedValue": 1500,
             "status": "已繳納"
         },
         {
             "name": "陳德光",
+            "number": "33",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "楊承翰",
+            "number": "73",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "林書楷",
+            "number": "10",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "林傳偉",
+            "number": "78",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "陳國嵐",
+            "number": "12",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "林政豪",
+            "number": "40",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "陳禹至",
+            "number": "16",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "張軒齊",
+            "number": "43",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "陳渝恩",
+            "number": "52",
             "teamFee": 0,
             "storedValue": 1500,
             "status": "已繳納"
         },
         {
             "name": "古佳叡",
+            "number": "66",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "古佳翰",
+            "number": "88",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "梁信勝",
+            "number": "8",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "羅俊昇",
+            "number": "99",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"
         },
         {
             "name": "胡哲瑋",
+            "number": "28",
             "teamFee": 0,
             "storedValue": 1500,
             "status": "已繳納"
         },
         {
             "name": "陳昱昕",
+            "number": "96",
             "teamFee": 0,
             "storedValue": 1500,
             "status": "已繳納"
         },
         {
             "name": "廖述博",
+            "number": "98",
             "teamFee": 0,
             "storedValue": 1500,
             "status": "已繳納"
         },
         {
             "name": "黃梅奇",
+            "number": "15",
             "teamFee": 1000,
             "storedValue": 2000,
             "status": "已繳納"

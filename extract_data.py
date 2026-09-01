@@ -167,6 +167,7 @@ for index, row in df_players.iterrows():
     
     team_fee_records.append({
         "name": clean_name,
+        "number": number_map.get(clean_name, ""),
         "teamFee": team_fee,
         "storedValue": stored_val,
         "status": status
