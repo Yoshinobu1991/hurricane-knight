@@ -353,7 +353,7 @@
                                     </td>
                                     
                                     <td class="p-3 border-r border-gray-200 font-bold">
-                                        <span v-if="record.status.includes('OK')" class="text-green-600 bg-green-50 px-3 py-1 rounded-full border border-green-200">
+                                        <span v-if="record.status && (record.status.includes('OK') || record.status.includes('已繳納'))" class="text-green-600 bg-green-50 px-3 py-1 rounded-full border border-green-200">
                                             <i class="fa-solid fa-check mr-1"></i> {{ record.status }}
                                         </span>
                                         <span v-else-if="record.status" class="text-red-500 bg-red-50 px-3 py-1 rounded border border-red-200">
