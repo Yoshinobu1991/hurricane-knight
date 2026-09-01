@@ -383,6 +383,34 @@
                 <span class="text-xs mt-1 inline-block text-gray-500"><i class="fa-solid fa-robot mr-1"></i>Powered by Antigravity AI</span>
             </p>
         </footer>
+
+        <!-- 加值紀錄 Modal -->
+        <div v-if="selectedPlayerTopUp" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity" @click="closeTopUpDetails">
+            <div class="bg-white rounded-xl shadow-2xl max-w-xs w-full overflow-hidden transform transition-all" @click.stop>
+                <div class="bg-hkblue-900 px-4 py-3 border-b-4 border-hkgold flex justify-between items-center">
+                    <h3 class="text-white font-bold text-base">
+                        <i class="fa-solid fa-sack-dollar text-hkgold mr-2"></i>加值紀錄明細
+                    </h3>
+                    <button @click="closeTopUpDetails" class="text-gray-300 hover:text-white transition-colors p-1">
+                        <i class="fa-solid fa-times text-lg"></i>
+                    </button>
+                </div>
+                <div class="p-6">
+                    <div class="text-center mb-3">
+                        <span class="text-lg font-bold text-hkblue-900">{{ selectedPlayerTopUp.name }}</span>
+                    </div>
+                    <div class="bg-blue-50/50 rounded-lg p-4 whitespace-pre-line text-gray-700 font-cool text-center leading-relaxed border border-blue-100 shadow-inner">
+                        {{ selectedPlayerTopUp.topUp }}
+                    </div>
+                </div>
+                <div class="bg-gray-50 px-4 py-3 flex justify-center">
+                    <button @click="closeTopUpDetails" class="w-full bg-hkblue-800 text-white font-bold py-2 px-4 rounded-lg hover:bg-hkblue-900 transition-colors shadow">
+                        關閉
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script>
@@ -392,6 +420,7 @@
             data() {
                 return {
                     currentTab: 'matrix', 
+                    selectedPlayerTopUp: null,
                     teamFund: teamData.teamFund,
                     players: teamData.players,
                     games: teamData.games,
@@ -411,6 +440,12 @@
                 }
             },
             methods: {
+                showTopUpDetails(player) {
+                    this.selectedPlayerTopUp = player;
+                },
+                closeTopUpDetails() {
+                    this.selectedPlayerTopUp = null;
+                },
                 getBalanceClass(player) {
                     if (player.isStudent) {
                         if (player.balance < 300) return 'text-red-600 bg-red-50';
