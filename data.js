@@ -5,6 +5,7 @@ const teamData = {
         {
             "id": 1,
             "name": "蔡允信",
+            "number": "18",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1609
@@ -12,6 +13,7 @@ const teamData = {
         {
             "id": 2,
             "name": "陳麟昇",
+            "number": "13",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1059
@@ -19,6 +21,7 @@ const teamData = {
         {
             "id": 3,
             "name": "徐嘉宏",
+            "number": "71",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1126
@@ -26,6 +29,7 @@ const teamData = {
         {
             "id": 4,
             "name": "莊子毅",
+            "number": "56",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 2000
@@ -33,6 +37,7 @@ const teamData = {
         {
             "id": 5,
             "name": "劉信宏",
+            "number": "17",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 206
@@ -40,6 +45,7 @@ const teamData = {
         {
             "id": 6,
             "name": "藍凱翔",
+            "number": "68",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 793
@@ -47,6 +53,7 @@ const teamData = {
         {
             "id": 7,
             "name": "顏嘉宏",
+            "number": "19",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 453
@@ -54,6 +61,7 @@ const teamData = {
         {
             "id": 8,
             "name": "林雍傑",
+            "number": "86",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 2000
@@ -61,6 +69,7 @@ const teamData = {
         {
             "id": 9,
             "name": "黃浩勝",
+            "number": "9",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 910
@@ -68,6 +77,7 @@ const teamData = {
         {
             "id": 10,
             "name": "蕭喬駿",
+            "number": "28",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 2000
@@ -75,6 +85,7 @@ const teamData = {
         {
             "id": 11,
             "name": "佘文甫",
+            "number": "47",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 2000
@@ -82,6 +93,7 @@ const teamData = {
         {
             "id": 12,
             "name": "劉毓銘",
+            "number": "77",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 717
@@ -89,6 +101,7 @@ const teamData = {
         {
             "id": 13,
             "name": "周澤緯",
+            "number": "33",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1886
@@ -96,6 +109,7 @@ const teamData = {
         {
             "id": 14,
             "name": "李富生",
+            "number": "16",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1861
@@ -103,6 +117,7 @@ const teamData = {
         {
             "id": 15,
             "name": "莊晨鴻",
+            "number": "12",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 285
@@ -110,6 +125,7 @@ const teamData = {
         {
             "id": 16,
             "name": "鄭安鈞",
+            "number": "27",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1706
@@ -117,6 +133,7 @@ const teamData = {
         {
             "id": 17,
             "name": "吳英信",
+            "number": "83",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1467
@@ -124,6 +141,7 @@ const teamData = {
         {
             "id": 18,
             "name": "黃彥智",
+            "number": "24",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1368
@@ -131,6 +149,7 @@ const teamData = {
         {
             "id": 19,
             "name": "陳乙嘉",
+            "number": "6",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1267
@@ -138,6 +157,7 @@ const teamData = {
         {
             "id": 20,
             "name": "陳德光",
+            "number": "33",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1020
@@ -145,6 +165,7 @@ const teamData = {
         {
             "id": 21,
             "name": "楊承翰",
+            "number": "73",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 728
@@ -152,6 +173,7 @@ const teamData = {
         {
             "id": 22,
             "name": "林書楷",
+            "number": "10",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 2000
@@ -159,6 +181,7 @@ const teamData = {
         {
             "id": 23,
             "name": "林傳偉",
+            "number": "78",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1872
@@ -166,6 +189,7 @@ const teamData = {
         {
             "id": 24,
             "name": "陳國嵐",
+            "number": "12",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1317
@@ -173,6 +197,7 @@ const teamData = {
         {
             "id": 25,
             "name": "林政豪",
+            "number": "40",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 931
@@ -180,6 +205,7 @@ const teamData = {
         {
             "id": 26,
             "name": "古佳叡",
+            "number": "66",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1754
@@ -187,6 +213,7 @@ const teamData = {
         {
             "id": 27,
             "name": "古佳翰",
+            "number": "88",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 2000
@@ -194,6 +221,7 @@ const teamData = {
         {
             "id": 28,
             "name": "梁信勝",
+            "number": "8",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1094
@@ -201,6 +229,7 @@ const teamData = {
         {
             "id": 29,
             "name": "羅俊昇",
+            "number": "99",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1877
@@ -208,6 +237,7 @@ const teamData = {
         {
             "id": 30,
             "name": "陳禹至",
+            "number": "16",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 1763
@@ -215,6 +245,7 @@ const teamData = {
         {
             "id": 31,
             "name": "張軒齊",
+            "number": "43",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 541
@@ -222,6 +253,7 @@ const teamData = {
         {
             "id": 32,
             "name": "黃梅奇",
+            "number": "15",
             "isStudent": false,
             "initialBalance": 2000,
             "balance": 2000
@@ -229,6 +261,7 @@ const teamData = {
         {
             "id": 33,
             "name": "胡哲瑋",
+            "number": "28",
             "isStudent": true,
             "initialBalance": 1500,
             "balance": 900
@@ -236,6 +269,7 @@ const teamData = {
         {
             "id": 34,
             "name": "林奕傑",
+            "number": "66",
             "isStudent": true,
             "initialBalance": 1500,
             "balance": 600
@@ -243,6 +277,7 @@ const teamData = {
         {
             "id": 35,
             "name": "陳昱昕",
+            "number": "96",
             "isStudent": true,
             "initialBalance": 1500,
             "balance": 1200
@@ -250,6 +285,7 @@ const teamData = {
         {
             "id": 36,
             "name": "廖述博",
+            "number": "98",
             "isStudent": true,
             "initialBalance": 1500,
             "balance": 900
@@ -257,6 +293,7 @@ const teamData = {
         {
             "id": 37,
             "name": "陳渝恩",
+            "number": "52",
             "isStudent": true,
             "initialBalance": 1500,
             "balance": 900

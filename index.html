@@ -101,8 +101,9 @@
                             </thead>
                             <tbody>
                                 <tr v-for="player in players" :key="player.id" class="hover:bg-blue-50 border-b">
-                                    <td class="p-2 border font-bold sticky left-0 bg-white shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)]">
-                                        {{ player.name }}
+                                    <td class="p-2 border font-bold sticky left-0 bg-white shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)] flex items-center justify-center space-x-2">
+                                        <span v-if="player.number" class="bg-gray-800 text-white text-xs px-1.5 py-0.5 rounded-full inline-block min-w-[24px] text-center">{{ player.number }}</span>
+                                        <span>{{ player.name }}</span>
                                     </td>
                                     <td class="p-2 border">
                                         <span v-if="player.isStudent" class="text-green-600 font-bold">學生</span>
