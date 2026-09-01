@@ -87,7 +87,7 @@
                     <button @click="currentTab = 'dashboard'" 
                             :class="{'bg-hkgold text-hkblue-900 shadow-inner': currentTab === 'dashboard', 'hover:bg-hkblue-800 text-gray-300': currentTab !== 'dashboard'}"
                             class="px-6 py-2 rounded-full font-bold transition duration-300 flex items-center">
-                        <i class="fa-solid fa-chart-pie mr-2"></i> 公積金與概況
+                        <i class="fa-solid fa-chart-pie mr-2"></i> 公積金與賽事概況
                     </button>
                     <button @click="currentTab = 'matrix'" 
                             :class="{'bg-hkgold text-hkblue-900 shadow-inner': currentTab === 'matrix', 'hover:bg-hkblue-800 text-gray-300': currentTab !== 'matrix'}"
@@ -109,7 +109,7 @@
                 <!-- 手機版選單 -->
                 <div class="md:hidden w-full">
                     <select v-model="currentTab" class="w-full bg-hkblue-800 text-white border border-hkgold rounded p-3 font-bold">
-                        <option value="dashboard">⚾ 公積金與概況</option>
+                        <option value="dashboard">⚾ 公積金與賽事概況</option>
                         <option value="matrix">⚾ 完整逐場扣款明細表</option>
                         <option value="teamExpenses">⚾ 隊費開銷明細</option>
                         <option value="teamFee">⚾ 隊費與儲值金明細</option>
@@ -272,6 +272,14 @@
                                     </td>
                                 </tr>
                             </tbody>
+                            <tfoot class="bg-gray-100 border-t-4 border-hkblue-900 font-bold">
+                                <tr>
+                                    <td class="p-4 text-right text-lg text-hkblue-900 pr-6 border-r border-gray-300">目前結餘：</td>
+                                    <td class="p-4 font-cool text-2xl" :class="teamExpensesTotal < 0 ? 'text-red-600' : 'text-hkblue-900'">
+                                        {{ teamExpensesTotal < 0 ? teamExpensesTotal : '+' + teamExpensesTotal }}
+                                    </td>
+                                </tr>
+                            </tfoot>
                         </table>
                     </div>
                 </div>
@@ -361,6 +369,9 @@
             computed: {
                 lowBalancePlayers() { 
                     return this.players.filter(p => p.balance < 300).sort((a,b) => a.balance - b.balance); 
+                },
+                teamExpensesTotal() {
+                    return this.teamExpenses.reduce((sum, exp) => sum + exp.amount, 0);
                 }
             },
             methods: {
