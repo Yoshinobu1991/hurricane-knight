@@ -91,10 +91,26 @@ for col in game_columns:
         games.append({
             "date": date_str,
             "opponent": opponent,
-            "totalCost": total_cost,
+            "totalCost": int(total_cost),
             "adultFee": adult_fee,
             "participants": participants
         })
+
+# 手動新增未來的賽事 (無參與者，因此表格下方會保持空白)
+games.append({
+    "date": "9/6",
+    "opponent": "VS 夢想家",
+    "totalCost": 0,
+    "adultFee": 0,
+    "participants": []
+})
+games.append({
+    "date": "9/20",
+    "opponent": "VS PTTPE",
+    "totalCost": 0,
+    "adultFee": 0,
+    "participants": []
+})
 
 # 排序球員： 身分(一般優先) -> 背號
 def sort_player(p):
