@@ -49,7 +49,7 @@
                         <div class="overflow-y-auto max-h-32 mt-2">
                             <ul class="text-red-600 font-bold text-sm">
                                 <li v-for="player in lowBalancePlayers" :key="player.id" class="mb-1">
-                                    <i class="fa-solid fa-triangle-exclamation mr-1"></i> {{ player.name }} (剩餘: ${{ player.balance }})
+                                    <i class="fa-solid fa-triangle-exclamation mr-1"></i> <span v-if="player.number" class="mr-1">#{{ player.number }}</span>{{ player.name }} (剩餘: ${{ player.balance }})
                                 </li>
                                 <li v-if="lowBalancePlayers.length === 0" class="text-green-500">
                                     <i class="fa-solid fa-check mr-1"></i> 目前所有球員餘額皆充足！
