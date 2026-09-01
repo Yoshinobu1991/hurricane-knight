@@ -350,7 +350,9 @@
                                         ${{ record.teamFee }}
                                     </td>
                                     
-                                    <td class="p-3 border-r border-gray-200 text-gray-700 font-cool text-base">
+                                    <td class="p-3 border-r border-gray-200 text-gray-700 font-cool text-base relative group transition-colors duration-200"
+                                        :class="record.topUp ? 'cursor-pointer hover:opacity-80' : ''"
+                                        @click="record.topUp ? showTopUpDetails(record) : null">
                                         ${{ record.storedValue }}
                                     </td>
                                     

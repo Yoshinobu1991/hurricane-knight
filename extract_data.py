@@ -163,6 +163,16 @@ for index, row in df_players.iterrows():
     team_fee = int(row['隊費']) if pd.notna(row['隊費']) else 0
     stored_val = int(row['比賽儲值金']) if pd.notna(row['比賽儲值金']) else 0
     
+    # 處理加值紀錄文字
+    topup_str = ""
+    # 套用手動加值
+    if clean_name in manual_topups:
+        for t in manual_topups[clean_name]:
+            stored_val += t["amount"]
+            if topup_str:
+                topup_str += "<br>"
+            topup_str += f"{t['date']}               <span class='text-green-600'>${t['amount']}</span>"
+            
     status = str(row['狀態']).strip() if pd.notna(row['狀態']) else ""
     
     team_fee_records.append({
@@ -170,6 +180,7 @@ for index, row in df_players.iterrows():
         "number": number_map.get(clean_name, ""),
         "teamFee": team_fee,
         "storedValue": stored_val,
+        "topUp": topup_str,
         "status": status
     })
 

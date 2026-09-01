@@ -885,7 +885,8 @@ const teamData = {
             "name": "蔡允信",
             "number": "18",
             "teamFee": 1000,
-            "storedValue": 2000,
+            "storedValue": 2100,
+            "topUp": "2026/09/01               <span class='text-green-600'>$100</span>",
             "status": "已繳納"
         },
         {
@@ -893,6 +894,7 @@ const teamData = {
             "number": "13",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -900,6 +902,7 @@ const teamData = {
             "number": "71",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -907,13 +910,15 @@ const teamData = {
             "number": "56",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
             "name": "劉信宏",
             "number": "17",
             "teamFee": 1000,
-            "storedValue": 2000,
+            "storedValue": 4000,
+            "topUp": "2026/09/01               <span class='text-green-600'>$2000</span>",
             "status": "已繳納"
         },
         {
@@ -921,6 +926,7 @@ const teamData = {
             "number": "68",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -928,6 +934,7 @@ const teamData = {
             "number": "19",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -935,6 +942,7 @@ const teamData = {
             "number": "86",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -942,6 +950,7 @@ const teamData = {
             "number": "9",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -949,6 +958,7 @@ const teamData = {
             "number": "28",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -956,6 +966,7 @@ const teamData = {
             "number": "47",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -963,6 +974,7 @@ const teamData = {
             "number": "77",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -970,6 +982,7 @@ const teamData = {
             "number": "33",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -977,6 +990,7 @@ const teamData = {
             "number": "16",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -984,6 +998,7 @@ const teamData = {
             "number": "12",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -991,6 +1006,7 @@ const teamData = {
             "number": "27",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -998,6 +1014,7 @@ const teamData = {
             "number": "83",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1005,6 +1022,7 @@ const teamData = {
             "number": "24",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1012,6 +1030,7 @@ const teamData = {
             "number": "6",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1019,6 +1038,7 @@ const teamData = {
             "number": "66",
             "teamFee": 0,
             "storedValue": 1500,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1026,6 +1046,7 @@ const teamData = {
             "number": "33",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1033,6 +1054,7 @@ const teamData = {
             "number": "73",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1040,6 +1062,7 @@ const teamData = {
             "number": "10",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1047,6 +1070,7 @@ const teamData = {
             "number": "78",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1054,6 +1078,7 @@ const teamData = {
             "number": "12",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1061,6 +1086,7 @@ const teamData = {
             "number": "40",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1068,6 +1094,7 @@ const teamData = {
             "number": "16",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1075,6 +1102,7 @@ const teamData = {
             "number": "43",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1082,6 +1110,7 @@ const teamData = {
             "number": "52",
             "teamFee": 0,
             "storedValue": 1500,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1089,6 +1118,7 @@ const teamData = {
             "number": "66",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1096,6 +1126,7 @@ const teamData = {
             "number": "88",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1103,6 +1134,7 @@ const teamData = {
             "number": "8",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1110,6 +1142,7 @@ const teamData = {
             "number": "99",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1117,6 +1150,7 @@ const teamData = {
             "number": "28",
             "teamFee": 0,
             "storedValue": 1500,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1124,6 +1158,7 @@ const teamData = {
             "number": "96",
             "teamFee": 0,
             "storedValue": 1500,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1131,6 +1166,7 @@ const teamData = {
             "number": "98",
             "teamFee": 0,
             "storedValue": 1500,
+            "topUp": "",
             "status": "已繳納"
         },
         {
@@ -1138,6 +1174,7 @@ const teamData = {
             "number": "15",
             "teamFee": 1000,
             "storedValue": 2000,
+            "topUp": "",
             "status": "已繳納"
         }
     ],
