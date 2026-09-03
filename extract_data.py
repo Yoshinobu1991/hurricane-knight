@@ -201,7 +201,7 @@ team_expenses = []
 adult_players_count = sum(1 for p in players if not p['isStudent'])
 team_fee_income = adult_players_count * 1000
 team_expenses.append({
-    "item": "20260215 2026球隊隊費",
+    "item": "2026/02/15 2026球隊隊費",
     "amount": team_fee_income
 })
 
@@ -210,13 +210,17 @@ for index, row in df_team.iterrows():
     amount = row['收入/支出金額']
     if pd.isna(item): continue
     
+    # 格式化日期：將開頭的 YYYYMMDD 改為 YYYY/MM/DD
+    item_str = str(item).strip()
+    item_str = re.sub(r'^(\d{4})(\d{2})(\d{2})\s*', r'\1/\2/\3 ', item_str)
+    
     val = int(amount) if pd.notna(amount) else 0
     # Excel 中的支出是正數，轉為負數
     if val > 0:
         val = -val
     
     team_expenses.append({
-        "item": str(item).strip(),
+        "item": item_str,
         "amount": val
     })
 
