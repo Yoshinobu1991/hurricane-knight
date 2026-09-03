@@ -28,8 +28,14 @@ df_team = pd.read_excel(xls, '隊費基本開銷')
 # 手動加值紀錄
 manual_topups = {
     "蔡允信": [{"date": "2026/09/01", "amount": 100}],
-    "劉信宏": [{"date": "2026/09/01", "amount": 2000}]
+    "劉信宏": [{"date": "2026/09/01", "amount": 2000}],
+    "莊晨鴻": [{"date": "2026/09/03", "amount": 1500}]
 }
+
+# 手動隊費支出紀錄
+manual_team_expenses = [
+    {"item": "2026/09/03 球棒握把布", "amount": 589}
+]
 
 # 1. 處理球員基本資料
 players = []
@@ -211,6 +217,16 @@ for index, row in df_team.iterrows():
     
     team_expenses.append({
         "item": str(item).strip(),
+        "amount": val
+    })
+
+# 加入手動隊費支出紀錄
+for exp in manual_team_expenses:
+    val = exp["amount"]
+    if val > 0:
+        val = -val
+    team_expenses.append({
+        "item": exp["item"],
         "amount": val
     })
 

@@ -44,8 +44,8 @@ const teamData = {
             "number": "12",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 285,
-            "topUp": ""
+            "balance": 1785,
+            "topUp": "2026/09/03               <span class='text-green-600'>$1500</span>"
         },
         {
             "id": 24,
@@ -921,8 +921,8 @@ const teamData = {
             "name": "莊晨鴻",
             "number": "12",
             "teamFee": 1000,
-            "storedValue": 2000,
-            "topUp": "",
+            "storedValue": 3500,
+            "topUp": "2026/09/03               <span class='text-green-600'>$1500</span>",
             "status": "已繳納",
             "isStudent": false
         },
@@ -1235,6 +1235,10 @@ const teamData = {
         {
             "item": "20260608 聯盟M BALL費用",
             "amount": -516
+        },
+        {
+            "item": "2026/09/03 球棒握把布",
+            "amount": -589
         }
     ]
 };
