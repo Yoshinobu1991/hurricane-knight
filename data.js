@@ -17,7 +17,7 @@ const teamData = {
             "number": "8",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1094,
+            "balance": 694,
             "topUp": ""
         },
         {
@@ -26,7 +26,7 @@ const teamData = {
             "number": "9",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 910,
+            "balance": 510,
             "topUp": ""
         },
         {
@@ -98,7 +98,7 @@ const teamData = {
             "number": "17",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2206,
+            "balance": 1806,
             "topUp": "2026/09/01               <span class='text-green-600'>$2000</span>"
         },
         {
@@ -116,7 +116,7 @@ const teamData = {
             "number": "19",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 453,
+            "balance": 53,
             "topUp": ""
         },
         {
@@ -143,7 +143,7 @@ const teamData = {
             "number": "28",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2000,
+            "balance": 1600,
             "topUp": ""
         },
         {
@@ -233,7 +233,7 @@ const teamData = {
             "number": "73",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 728,
+            "balance": 528,
             "topUp": ""
         },
         {
@@ -251,7 +251,7 @@ const teamData = {
             "number": "78",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1872,
+            "balance": 1472,
             "topUp": ""
         },
         {
@@ -260,7 +260,7 @@ const teamData = {
             "number": "83",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1467,
+            "balance": 1067,
             "topUp": ""
         },
         {
@@ -287,7 +287,7 @@ const teamData = {
             "number": "99",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1877,
+            "balance": 1477,
             "topUp": ""
         },
         {
@@ -296,7 +296,7 @@ const teamData = {
             "number": "28",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 900,
+            "balance": 800,
             "topUp": ""
         },
         {
@@ -305,7 +305,7 @@ const teamData = {
             "number": "52",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 900,
+            "balance": 750,
             "topUp": ""
         },
         {
@@ -332,7 +332,7 @@ const teamData = {
             "number": "98",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 900,
+            "balance": 750,
             "topUp": ""
         }
     ],
@@ -875,9 +875,58 @@ const teamData = {
         {
             "date": "9/20",
             "opponent": "VS PTTPE",
-            "totalCost": 0,
-            "adultFee": 0,
-            "participants": []
+            "totalCost": 3850,
+            "adultFee": 400,
+            "participants": [
+                {
+                    "name": "梁信勝",
+                    "fee": 400
+                },
+                {
+                    "name": "廖述博",
+                    "fee": 150
+                },
+                {
+                    "name": "吳英信",
+                    "fee": 400
+                },
+                {
+                    "name": "劉信宏",
+                    "fee": 400
+                },
+                {
+                    "name": "顏嘉宏",
+                    "fee": 400
+                },
+                {
+                    "name": "陳渝恩",
+                    "fee": 150
+                },
+                {
+                    "name": "黃浩勝",
+                    "fee": 400
+                },
+                {
+                    "name": "楊承翰",
+                    "fee": 200
+                },
+                {
+                    "name": "胡哲瑋",
+                    "fee": 100
+                },
+                {
+                    "name": "羅俊昇",
+                    "fee": 400
+                },
+                {
+                    "name": "林傳偉",
+                    "fee": 400
+                },
+                {
+                    "name": "蕭喬駿",
+                    "fee": 400
+                }
+            ]
         }
     ],
     "teamFeeRecords": [
@@ -1239,6 +1288,10 @@ const teamData = {
         {
             "item": "2026/09/03 球棒握把布",
             "amount": -589
+        },
+        {
+            "item": "2026/09/20 三峽北大球場 VS PTTPE",
+            "amount": -50
         }
     ]
 };

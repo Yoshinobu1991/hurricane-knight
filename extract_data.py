@@ -34,7 +34,39 @@ manual_topups = {
 
 # 手動隊費支出紀錄
 manual_team_expenses = [
-    {"item": "2026/09/03 球棒握把布", "amount": 589}
+    {"item": "2026/09/03 球棒握把布", "amount": 589},
+    {"item": "2026/09/20 三峽北大球場 VS PTTPE", "amount": 50}
+]
+
+# 手動比賽紀錄
+manual_games = [
+    {
+        "date": "9/6",
+        "opponent": "VS 夢想家",
+        "totalCost": 0,
+        "adultFee": 0,
+        "participants": []
+    },
+    {
+        "date": "9/20",
+        "opponent": "VS PTTPE",
+        "totalCost": 3850,
+        "adultFee": 400,
+        "participants": [
+            {"name": "梁信勝", "fee": 400},
+            {"name": "廖述博", "fee": 150},
+            {"name": "吳英信", "fee": 400},
+            {"name": "劉信宏", "fee": 400},
+            {"name": "顏嘉宏", "fee": 400},
+            {"name": "陳渝恩", "fee": 150},
+            {"name": "黃浩勝", "fee": 400},
+            {"name": "楊承翰", "fee": 200},
+            {"name": "胡哲瑋", "fee": 100},
+            {"name": "羅俊昇", "fee": 400},
+            {"name": "林傳偉", "fee": 400},
+            {"name": "蕭喬駿", "fee": 400}
+        ]
+    }
 ]
 
 # 1. 處理球員基本資料
@@ -126,21 +158,14 @@ for col in game_columns:
             "participants": participants
         })
 
-# 手動新增未來的賽事 (無參與者，因此表格下方會保持空白)
-games.append({
-    "date": "9/6",
-    "opponent": "VS 夢想家",
-    "totalCost": 0,
-    "adultFee": 0,
-    "participants": []
-})
-games.append({
-    "date": "9/20",
-    "opponent": "VS PTTPE",
-    "totalCost": 0,
-    "adultFee": 0,
-    "participants": []
-})
+# 將手動新增的比賽加入 games，並扣除餘額
+for mg in manual_games:
+    games.append(mg)
+    for p in mg["participants"]:
+        for player in players:
+            if player["name"] == p["name"]:
+                player["balance"] -= p["fee"]
+                break
 
 # 排序球員： 身分(一般優先) -> 背號
 def sort_player(p):
