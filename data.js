@@ -116,8 +116,8 @@ const teamData = {
             "number": "19",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 53,
-            "topUp": ""
+            "balance": 2053,
+            "topUp": "2026/09/22               <span class='text-green-600'>$2000</span>"
         },
         {
             "id": 18,
@@ -1035,8 +1035,8 @@ const teamData = {
             "name": "顏嘉宏",
             "number": "19",
             "teamFee": 1000,
-            "storedValue": 2000,
-            "topUp": "",
+            "storedValue": 4000,
+            "topUp": "2026/09/22               <span class='text-green-600'>$2000</span>",
             "status": "已繳納",
             "isStudent": false
         },
