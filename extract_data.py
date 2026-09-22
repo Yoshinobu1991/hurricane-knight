@@ -41,13 +41,6 @@ manual_team_expenses = [
 # 手動比賽紀錄
 manual_games = [
     {
-        "date": "9/6",
-        "opponent": "VS 夢想家",
-        "totalCost": 0,
-        "adultFee": 0,
-        "participants": []
-    },
-    {
         "date": "9/20",
         "opponent": "VS PTTPE",
         "totalCost": 3850,

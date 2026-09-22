@@ -866,13 +866,6 @@ const teamData = {
             ]
         },
         {
-            "date": "9/6",
-            "opponent": "VS 夢想家",
-            "totalCost": 0,
-            "adultFee": 0,
-            "participants": []
-        },
-        {
             "date": "9/20",
             "opponent": "VS PTTPE",
             "totalCost": 3850,
