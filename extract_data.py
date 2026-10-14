@@ -60,6 +60,25 @@ manual_games = [
             {"name": "林傳偉", "fee": 400},
             {"name": "蕭喬駿", "fee": 400}
         ]
+    },
+    {
+        "date": "10/4",
+        "opponent": "VS 宙斯",
+        "totalCost": 3950,
+        "adultFee": 406,
+        "participants": [
+            {"name": "胡哲瑋", "fee": 150},
+            {"name": "林奕傑", "fee": 150},
+            {"name": "陳麟昇", "fee": 406},
+            {"name": "黃彥智", "fee": 406},
+            {"name": "藍凱翔", "fee": 406},
+            {"name": "林雍傑", "fee": 406},
+            {"name": "楊承翰", "fee": 406},
+            {"name": "梁信勝", "fee": 406},
+            {"name": "黃浩勝", "fee": 406},
+            {"name": "劉信宏", "fee": 406},
+            {"name": "林政豪", "fee": 406}
+        ]
     }
 ]
 

@@ -17,7 +17,7 @@ const teamData = {
             "number": "8",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 694,
+            "balance": 288,
             "topUp": ""
         },
         {
@@ -26,7 +26,7 @@ const teamData = {
             "number": "9",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 510,
+            "balance": 104,
             "topUp": ""
         },
         {
@@ -62,7 +62,7 @@ const teamData = {
             "number": "13",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1059,
+            "balance": 653,
             "topUp": ""
         },
         {
@@ -98,7 +98,7 @@ const teamData = {
             "number": "17",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1806,
+            "balance": 1400,
             "topUp": "2026/09/01               <span class='text-green-600'>$2000</span>"
         },
         {
@@ -125,7 +125,7 @@ const teamData = {
             "number": "24",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1368,
+            "balance": 962,
             "topUp": ""
         },
         {
@@ -170,7 +170,7 @@ const teamData = {
             "number": "40",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 931,
+            "balance": 525,
             "topUp": ""
         },
         {
@@ -215,7 +215,7 @@ const teamData = {
             "number": "68",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 793,
+            "balance": 387,
             "topUp": ""
         },
         {
@@ -233,7 +233,7 @@ const teamData = {
             "number": "73",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 528,
+            "balance": 122,
             "topUp": ""
         },
         {
@@ -269,7 +269,7 @@ const teamData = {
             "number": "86",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2000,
+            "balance": 1594,
             "topUp": ""
         },
         {
@@ -296,7 +296,7 @@ const teamData = {
             "number": "28",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 800,
+            "balance": 650,
             "topUp": ""
         },
         {
@@ -314,7 +314,7 @@ const teamData = {
             "number": "66",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 600,
+            "balance": 450,
             "topUp": ""
         },
         {
@@ -918,6 +918,58 @@ const teamData = {
                 {
                     "name": "蕭喬駿",
                     "fee": 400
+                }
+            ]
+        },
+        {
+            "date": "10/4",
+            "opponent": "VS 宙斯",
+            "totalCost": 3950,
+            "adultFee": 406,
+            "participants": [
+                {
+                    "name": "胡哲瑋",
+                    "fee": 150
+                },
+                {
+                    "name": "林奕傑",
+                    "fee": 150
+                },
+                {
+                    "name": "陳麟昇",
+                    "fee": 406
+                },
+                {
+                    "name": "黃彥智",
+                    "fee": 406
+                },
+                {
+                    "name": "藍凱翔",
+                    "fee": 406
+                },
+                {
+                    "name": "林雍傑",
+                    "fee": 406
+                },
+                {
+                    "name": "楊承翰",
+                    "fee": 406
+                },
+                {
+                    "name": "梁信勝",
+                    "fee": 406
+                },
+                {
+                    "name": "黃浩勝",
+                    "fee": 406
+                },
+                {
+                    "name": "劉信宏",
+                    "fee": 406
+                },
+                {
+                    "name": "林政豪",
+                    "fee": 406
                 }
             ]
         }
