@@ -36,7 +36,8 @@ manual_topups = {
 # 手動隊費支出紀錄
 manual_team_expenses = [
     {"item": "2026/09/03 球棒握把布", "amount": 589},
-    {"item": "2026/09/20 三峽北大球場 VS PTTPE", "amount": 50}
+    {"item": "2026/09/20 三峽北大球場 VS PTTPE", "amount": 50},
+    {"item": "2026/10/18 VS 紅閃電", "amount": 40}
 ]
 
 # 手動比賽紀錄
@@ -78,6 +79,26 @@ manual_games = [
             {"name": "黃浩勝", "fee": 406},
             {"name": "劉信宏", "fee": 406},
             {"name": "林政豪", "fee": 406}
+        ]
+    },
+    {
+        "date": "10/18",
+        "opponent": "VS 紅閃電",
+        "totalCost": 3040,
+        "adultFee": 300,
+        "participants": [
+            {"name": "廖述博", "fee": 150},
+            {"name": "林奕傑", "fee": 150},
+            {"name": "顏嘉宏", "fee": 300},
+            {"name": "劉信宏", "fee": 300},
+            {"name": "林政豪", "fee": 300},
+            {"name": "莊晨鴻", "fee": 300},
+            {"name": "張軒齊", "fee": 300},
+            {"name": "陳麟昇", "fee": 300},
+            {"name": "胡哲瑋", "fee": 150},
+            {"name": "楊承翰", "fee": 300},
+            {"name": "古佳翰", "fee": 300},
+            {"name": "古佳叡", "fee": 150}
         ]
     }
 ]
