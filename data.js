@@ -233,8 +233,8 @@ const teamData = {
             "number": "73",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": -178,
-            "topUp": ""
+            "balance": 1822,
+            "topUp": "2026/10/27               <span class='text-green-600'>$2000</span>"
         },
         {
             "id": 12,
@@ -1287,8 +1287,8 @@ const teamData = {
             "name": "楊承翰",
             "number": "73",
             "teamFee": 1000,
-            "storedValue": 2000,
-            "topUp": "",
+            "storedValue": 4000,
+            "topUp": "2026/10/27               <span class='text-green-600'>$2000</span>",
             "status": "已繳納",
             "isStudent": false
         },
