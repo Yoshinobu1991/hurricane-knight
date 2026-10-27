@@ -170,8 +170,8 @@ const teamData = {
             "number": "40",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 225,
-            "topUp": ""
+            "balance": 2225,
+            "topUp": "2026/10/27               <span class='text-green-600'>$2000</span>"
         },
         {
             "id": 31,
@@ -1206,8 +1206,8 @@ const teamData = {
             "name": "林政豪",
             "number": "40",
             "teamFee": 1000,
-            "storedValue": 2000,
-            "topUp": "",
+            "storedValue": 4000,
+            "topUp": "2026/10/27               <span class='text-green-600'>$2000</span>",
             "status": "已繳納",
             "isStudent": false
         },
