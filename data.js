@@ -215,8 +215,8 @@ const teamData = {
             "number": "68",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 387,
-            "topUp": ""
+            "balance": 1387,
+            "topUp": "2026/10/27               <span class='text-green-600'>$1000</span>"
         },
         {
             "id": 3,
@@ -1269,8 +1269,8 @@ const teamData = {
             "name": "藍凱翔",
             "number": "68",
             "teamFee": 1000,
-            "storedValue": 2000,
-            "topUp": "",
+            "storedValue": 3000,
+            "topUp": "2026/10/27               <span class='text-green-600'>$1000</span>",
             "status": "已繳納",
             "isStudent": false
         },
