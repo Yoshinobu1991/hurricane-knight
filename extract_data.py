@@ -37,7 +37,7 @@ manual_topups = {
 manual_team_expenses = [
     {"item": "2026/09/03 球棒握把布", "amount": 589},
     {"item": "2026/09/20 三峽北大球場 VS PTTPE", "amount": 50},
-    {"item": "2026/10/18 VS 紅閃電", "amount": 40}
+    {"item": "2026/10/18 八里球場 VS 紅閃電", "amount": 40}
 ]
 
 # 手動比賽紀錄

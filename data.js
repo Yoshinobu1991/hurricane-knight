@@ -1395,7 +1395,7 @@ const teamData = {
             "amount": -50
         },
         {
-            "item": "2026/10/18 VS 紅閃電",
+            "item": "2026/10/18 八里球場 VS 紅閃電",
             "amount": -40
         }
     ]
