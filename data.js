@@ -8,7 +8,7 @@ const teamData = {
             "number": "6",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1267,
+            "balance": 947,
             "topUp": ""
         },
         {
@@ -35,7 +35,7 @@ const teamData = {
             "number": "10",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2000,
+            "balance": 1840,
             "topUp": ""
         },
         {
@@ -44,7 +44,7 @@ const teamData = {
             "number": "12",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1485,
+            "balance": 1165,
             "topUp": "2026/09/03               <span class='text-green-600'>$1500</span>"
         },
         {
@@ -98,7 +98,7 @@ const teamData = {
             "number": "17",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1100,
+            "balance": 780,
             "topUp": "2026/09/01               <span class='text-green-600'>$2000</span>"
         },
         {
@@ -107,7 +107,7 @@ const teamData = {
             "number": "18",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1709,
+            "balance": 1389,
             "topUp": "2026/09/01               <span class='text-green-600'>$100</span>"
         },
         {
@@ -116,7 +116,7 @@ const teamData = {
             "number": "19",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1753,
+            "balance": 1433,
             "topUp": "2026/09/22               <span class='text-green-600'>$2000</span>"
         },
         {
@@ -161,7 +161,7 @@ const teamData = {
             "number": "33",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1020,
+            "balance": 860,
             "topUp": ""
         },
         {
@@ -206,7 +206,7 @@ const teamData = {
             "number": "66",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1604,
+            "balance": 1284,
             "topUp": ""
         },
         {
@@ -224,7 +224,7 @@ const teamData = {
             "number": "71",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1126,
+            "balance": 806,
             "topUp": ""
         },
         {
@@ -305,7 +305,7 @@ const teamData = {
             "number": "52",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 750,
+            "balance": 600,
             "topUp": ""
         },
         {
@@ -314,7 +314,7 @@ const teamData = {
             "number": "66",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 300,
+            "balance": 150,
             "topUp": ""
         },
         {
@@ -332,7 +332,7 @@ const teamData = {
             "number": "98",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 600,
+            "balance": 450,
             "topUp": ""
         }
     ],
@@ -1028,6 +1028,62 @@ const teamData = {
                     "fee": 150
                 }
             ]
+        },
+        {
+            "date": "11/1",
+            "opponent": "VS 夢想家",
+            "totalCost": 3040,
+            "adultFee": 320,
+            "participants": [
+                {
+                    "name": "陳渝恩",
+                    "fee": 150
+                },
+                {
+                    "name": "廖述博",
+                    "fee": 150
+                },
+                {
+                    "name": "莊晨鴻",
+                    "fee": 320
+                },
+                {
+                    "name": "劉信宏",
+                    "fee": 320
+                },
+                {
+                    "name": "顏嘉宏",
+                    "fee": 320
+                },
+                {
+                    "name": "林奕傑",
+                    "fee": 150
+                },
+                {
+                    "name": "古佳叡",
+                    "fee": 320
+                },
+                {
+                    "name": "蔡允信",
+                    "fee": 320
+                },
+                {
+                    "name": "徐嘉宏",
+                    "fee": 320
+                },
+                {
+                    "name": "林書楷",
+                    "fee": 160
+                },
+                {
+                    "name": "陳德光",
+                    "fee": 160
+                },
+                {
+                    "name": "陳乙嘉",
+                    "fee": 320
+                }
+            ]
         }
     ],
     "teamFeeRecords": [
@@ -1397,6 +1453,10 @@ const teamData = {
         {
             "item": "2026/10/18 八里球場 VS 紅閃電",
             "amount": -40
+        },
+        {
+            "item": "2026/11/01 八里球場 VS 夢想家",
+            "amount": -30
         }
     ]
 };
