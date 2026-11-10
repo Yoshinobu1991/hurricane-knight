@@ -26,8 +26,8 @@ const teamData = {
             "number": "9",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 104,
-            "topUp": ""
+            "balance": 2104,
+            "topUp": "2026/11/10               <span class='text-green-600'>$2000</span>"
         },
         {
             "id": 22,
@@ -1109,8 +1109,8 @@ const teamData = {
             "name": "黃浩勝",
             "number": "9",
             "teamFee": 1000,
-            "storedValue": 2000,
-            "topUp": "",
+            "storedValue": 4000,
+            "topUp": "2026/11/10               <span class='text-green-600'>$2000</span>",
             "status": "已繳納",
             "isStudent": false
         },
