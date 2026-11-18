@@ -26,7 +26,7 @@ const teamData = {
             "number": "9",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2104,
+            "balance": 1774,
             "topUp": "2026/11/10               <span class='text-green-600'>$2000</span>"
         },
         {
@@ -44,7 +44,7 @@ const teamData = {
             "number": "12",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1165,
+            "balance": 835,
             "topUp": "2026/09/03               <span class='text-green-600'>$1500</span>"
         },
         {
@@ -62,7 +62,7 @@ const teamData = {
             "number": "13",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2353,
+            "balance": 2023,
             "topUp": "2026/10/29               <span class='text-green-600'>$2000</span>"
         },
         {
@@ -98,7 +98,7 @@ const teamData = {
             "number": "17",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 780,
+            "balance": 450,
             "topUp": "2026/09/01               <span class='text-green-600'>$2000</span>"
         },
         {
@@ -107,7 +107,7 @@ const teamData = {
             "number": "18",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1389,
+            "balance": 1059,
             "topUp": "2026/09/01               <span class='text-green-600'>$100</span>"
         },
         {
@@ -116,7 +116,7 @@ const teamData = {
             "number": "19",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1433,
+            "balance": 1103,
             "topUp": "2026/09/22               <span class='text-green-600'>$2000</span>"
         },
         {
@@ -125,7 +125,7 @@ const teamData = {
             "number": "24",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 962,
+            "balance": 632,
             "topUp": ""
         },
         {
@@ -143,7 +143,7 @@ const teamData = {
             "number": "28",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1600,
+            "balance": 1270,
             "topUp": ""
         },
         {
@@ -170,7 +170,7 @@ const teamData = {
             "number": "40",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 2225,
+            "balance": 1895,
             "topUp": "2026/10/27               <span class='text-green-600'>$2000</span>"
         },
         {
@@ -206,7 +206,7 @@ const teamData = {
             "number": "66",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1284,
+            "balance": 954,
             "topUp": ""
         },
         {
@@ -233,7 +233,7 @@ const teamData = {
             "number": "73",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 1822,
+            "balance": 1492,
             "topUp": "2026/10/27               <span class='text-green-600'>$2000</span>"
         },
         {
@@ -314,7 +314,7 @@ const teamData = {
             "number": "66",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 150,
+            "balance": 0,
             "topUp": ""
         },
         {
@@ -332,7 +332,7 @@ const teamData = {
             "number": "98",
             "isStudent": true,
             "initialBalance": 1500,
-            "balance": 450,
+            "balance": 300,
             "topUp": ""
         }
     ],
@@ -1084,6 +1084,66 @@ const teamData = {
                     "fee": 320
                 }
             ]
+        },
+        {
+            "date": "11/15",
+            "opponent": "VS PTT鄉民",
+            "totalCost": 3950,
+            "adultFee": 330,
+            "participants": [
+                {
+                    "name": "廖述博",
+                    "fee": 150
+                },
+                {
+                    "name": "林奕傑",
+                    "fee": 150
+                },
+                {
+                    "name": "顏嘉宏",
+                    "fee": 330
+                },
+                {
+                    "name": "蔡允信",
+                    "fee": 330
+                },
+                {
+                    "name": "蕭喬駿",
+                    "fee": 330
+                },
+                {
+                    "name": "黃彥智",
+                    "fee": 330
+                },
+                {
+                    "name": "古佳叡",
+                    "fee": 330
+                },
+                {
+                    "name": "陳麟昇",
+                    "fee": 330
+                },
+                {
+                    "name": "黃浩勝",
+                    "fee": 330
+                },
+                {
+                    "name": "楊承翰",
+                    "fee": 330
+                },
+                {
+                    "name": "劉信宏",
+                    "fee": 330
+                },
+                {
+                    "name": "林政豪",
+                    "fee": 330
+                },
+                {
+                    "name": "莊晨鴻",
+                    "fee": 330
+                }
+            ]
         }
     ],
     "teamFeeRecords": [
@@ -1457,6 +1517,10 @@ const teamData = {
         {
             "item": "2026/11/01 八里球場 VS 夢想家",
             "amount": -30
+        },
+        {
+            "item": "2026/11/15 北大棒球場 VS PTT鄉民",
+            "amount": -20
         }
     ]
 };
