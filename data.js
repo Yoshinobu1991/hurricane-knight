@@ -98,8 +98,8 @@ const teamData = {
             "number": "17",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 450,
-            "topUp": "2026/09/01               <span class='text-green-600'>$2000</span>"
+            "balance": 2450,
+            "topUp": "2026/09/01               <span class='text-green-600'>$2000</span><br>2026/11/21               <span class='text-green-600'>$2000</span>"
         },
         {
             "id": 1,
@@ -1241,8 +1241,8 @@ const teamData = {
             "name": "劉信宏",
             "number": "17",
             "teamFee": 1000,
-            "storedValue": 4000,
-            "topUp": "2026/09/01               <span class='text-green-600'>$2000</span>",
+            "storedValue": 6000,
+            "topUp": "2026/09/01               <span class='text-green-600'>$2000</span><br>2026/11/21               <span class='text-green-600'>$2000</span>",
             "status": "已繳納",
             "isStudent": false
         },
