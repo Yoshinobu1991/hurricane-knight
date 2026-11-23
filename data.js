@@ -44,8 +44,8 @@ const teamData = {
             "number": "12",
             "isStudent": false,
             "initialBalance": 2000,
-            "balance": 835,
-            "topUp": "2026/09/03               <span class='text-green-600'>$1500</span>"
+            "balance": 1934,
+            "topUp": "2026/09/03               <span class='text-green-600'>$1500</span><br>2026/11/23               <span class='text-green-600'>$1099</span>"
         },
         {
             "id": 24,
@@ -1187,8 +1187,8 @@ const teamData = {
             "name": "莊晨鴻",
             "number": "12",
             "teamFee": 1000,
-            "storedValue": 3500,
-            "topUp": "2026/09/03               <span class='text-green-600'>$1500</span>",
+            "storedValue": 4599,
+            "topUp": "2026/09/03               <span class='text-green-600'>$1500</span><br>2026/11/23               <span class='text-green-600'>$1099</span>",
             "status": "已繳納",
             "isStudent": false
         },
@@ -1521,6 +1521,10 @@ const teamData = {
         {
             "item": "2026/11/15 北大棒球場 VS PTT鄉民",
             "amount": -20
+        },
+        {
+            "item": "2026/11/23 隊上M BALL購買",
+            "amount": -1099
         }
     ]
 };
