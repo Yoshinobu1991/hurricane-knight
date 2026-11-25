@@ -41,17 +41,19 @@ manual_topups = {
     "林政豪": [{"date": "2026/10/27", "amount": 2000}],
     "楊承翰": [{"date": "2026/10/27", "amount": 2000}],
     "陳麟昇": [{"date": "2026/10/29", "amount": 2000}],
-    "黃浩勝": [{"date": "2026/11/10", "amount": 2000}]
+    "黃浩勝": [{"date": "2026/11/10", "amount": 2000}],
+    "張軒齊": [{"date": "2026/11/25", "amount": 1000}]
 }
 
-# 手動隊費支出紀錄
+# 手動隊費支出與收入紀錄 (支出為負數，收入為正數)
 manual_team_expenses = [
-    {"item": "2026/09/03 球棒握把布", "amount": 589},
-    {"item": "2026/09/20 三峽北大球場 VS PTTPE", "amount": 50},
-    {"item": "2026/10/18 八里球場 VS 紅閃電", "amount": 40},
-    {"item": "2026/11/01 八里球場 VS 夢想家", "amount": 30},
-    {"item": "2026/11/15 北大棒球場 VS PTT鄉民", "amount": 20},
-    {"item": "2026/11/23 隊上M BALL購買", "amount": 1099}
+    {"item": "2026/09/03 球棒握把布", "amount": -589},
+    {"item": "2026/09/20 三峽北大球場 VS PTTPE", "amount": -50},
+    {"item": "2026/10/18 八里球場 VS 紅閃電", "amount": -40},
+    {"item": "2026/11/01 八里球場 VS 夢想家", "amount": -30},
+    {"item": "2026/11/15 北大棒球場 VS PTT鄉民", "amount": -20},
+    {"item": "2026/11/23 隊上M BALL購買", "amount": -1099},
+    {"item": "2026/11/22 八里國中球場 VS TFT", "amount": 10}
 ]
 
 # 手動比賽紀錄
@@ -154,6 +156,26 @@ manual_games = [
             {"name": "劉信宏", "fee": 330},
             {"name": "林政豪", "fee": 330},
             {"name": "莊晨鴻", "fee": 330}
+        ]
+    },
+    {
+        "date": "11/22",
+        "opponent": "VS TFT",
+        "totalCost": 3040,
+        "adultFee": 275,
+        "participants": [
+            {"name": "廖述博", "fee": 150},
+            {"name": "林奕傑", "fee": 150},
+            {"name": "張軒齊", "fee": 275},
+            {"name": "劉信宏", "fee": 275},
+            {"name": "劉毓銘", "fee": 275},
+            {"name": "林政豪", "fee": 275},
+            {"name": "莊晨鴻", "fee": 275},
+            {"name": "蕭喬駿", "fee": 275},
+            {"name": "黃浩勝", "fee": 275},
+            {"name": "藍凱翔", "fee": 275},
+            {"name": "陳乙嘉", "fee": 275},
+            {"name": "顏嘉宏", "fee": 275}
         ]
     }
 ]
@@ -338,11 +360,9 @@ for index, row in df_team.iterrows():
         "amount": val
     })
 
-# 加入手動隊費支出紀錄
+# 加入手動隊費支出與收入紀錄
 for exp in manual_team_expenses:
     val = exp["amount"]
-    if val > 0:
-        val = -val
     team_expenses.append({
         "item": exp["item"],
         "amount": val
